@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SineUp | Elite Math Mentorship for High Achievers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#1A237E',
+                        gold: '#C5A059',
+                        goldHover: '#B48E4D',
+                        graphGrey: '#F5F7FA',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(26, 35, 126, 0.85));
+        }
+        .grid-pattern {
+            background-image: radial-gradient(#1A237E 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="bg-graphGrey font-sans text-navy antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-navy/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="font-serif text-2xl font-bold tracking-tight">Sine<span class="text-gold">Up</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold uppercase tracking-widest">
+                    <a href="#tutors" class="hover:text-gold transition-colors">Our Fellows</a>
+                    <a href="#teach" class="hover:text-gold transition-colors">Teach</a>
+                    <a href="#waitlist" class="bg-navy text-white px-6 py-3 rounded-sm hover:bg-opacity-90 transition-all">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Demand) -->
+    <header class="relative overflow-hidden bg-navy text-white py-24">
+        <div class="absolute inset-0 z-0">
+            <img src="images/high-end-editorial-photography-of-a-focu.png" alt="High performance math tutoring" class="w-full h-full object-cover opacity-40">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl">
+                <h1 class="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
+                    Mastery is not <br><span class="italic text-gold">remedial.</span>
+                </h1>
+                <p class="text-xl text-white/80 mb-10 leading-relaxed">
+                    Access elite math mentorship from Top-20 university fellows. Whether it's AMC/AIME prep or Ivy League admissions, we optimize for the edge.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#waitlist" class="bg-gold text-white text-center px-8 py-4 font-bold uppercase tracking-widest hover:bg-goldHover transition-all">
+                        Secure a Match
+                    </a>
+                    <div class="flex items-center text-sm text-white/60 px-2 italic">
+                        Current Batch: Limited to 25 placements in 2026.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust Bar -->
+    <section class="bg-white border-b border-navy/5 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-xs uppercase tracking-[0.2em] font-bold text-navy/40 mb-4">Fellows from the world's leading institutions</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-30 grayscale">
+                <span class="font-serif text-xl font-bold">MIT</span>
+                <span class="font-serif text-xl font-bold">Stanford</span>
+                <span class="font-serif text-xl font-bold">Harvard</span>
+                <span class="font-serif text-xl font-bold">Princeton</span>
+                <span class="font-serif text-xl font-bold">Yale</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutor Gallery (Shadow Inventory) -->
+    <section id="tutors" class="py-24 relative">
+        <div class="absolute inset-0 grid-pattern pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl font-bold mb-4">The SineUp Fellowship</h2>
+                <p class="text-navy/60 max-w-xl mx-auto">We don't hire "tutors." we award fellowships to the brightest minds in undergraduate math.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tutor 1 -->
+                <div class="bg-white p-8 border-l-4 border-gold shadow-sm hover:shadow-xl transition-shadow group">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold">Alex M.</h3>
+                            <p class="text-gold font-semibold uppercase text-xs tracking-widest mt-1">MIT '27</p>
+                        </div>
+                        <span class="bg-navy/5 text-navy text-[10px] px-2 py-1 font-bold uppercase">USAMO Qualifier</span>
+                    </div>
+                    <p class="text-sm text-navy/70 mb-6 leading-relaxed">Specializes in competition strategy for AMC 10/12 and AIME. 5+ years of contest math experience.</p>
+                    <div class="pt-6 border-t border-navy/5 flex justify-between items-center">
+                        <span class="font-bold text-lg text-navy">$85<span class="text-xs font-normal text-navy/50">/hr</span></span>
+                        <a href="#waitlist" class="text-xs font-bold uppercase tracking-tighter border-b-2 border-gold pb-1 group-hover:border-navy transition-all">Reserve Spot</a>
+                    </div>
+                </div>
+
+                <!-- Tutor 2 -->
+                <div class="bg-white p-8 border-l-4 border-gold shadow-sm hover:shadow-xl transition-shadow group">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold">Sarah L.</h3>
+                            <p class="text-gold font-semibold uppercase text-xs tracking-widest mt-1">Stanford '26</p>
+                        </div>
+                        <span class="bg-navy/5 text-navy text-[10px] px-2 py-1 font-bold uppercase">AP BC Expert</span>
+                    </div>
+                    <p class="text-sm text-navy/70 mb-6 leading-relaxed">Expert in bridging high school calculus to collegiate level proofs. Focus on conceptual deep-dives.</p>
+                    <div class="pt-6 border-t border-navy/5 flex justify-between items-center">
+                        <span class="font-bold text-lg text-navy">$80<span class="text-xs font-normal text-navy/50">/hr</span></span>
+                        <a href="#waitlist" class="text-xs font-bold uppercase tracking-tighter border-b-2 border-gold pb-1 group-hover:border-navy transition-all">Reserve Spot</a>
+                    </div>
+                </div>
+
+                <!-- Tutor 3 -->
+                <div class="bg-white p-8 border-l-4 border-gold shadow-sm hover:shadow-xl transition-shadow group">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold">David K.</h3>
+                            <p class="text-gold font-semibold uppercase text-xs tracking-widest mt-1">Harvard '28</p>
+                        </div>
+                        <span class="bg-navy/5 text-navy text-[10px] px-2 py-1 font-bold uppercase">AIME Scholar</span>
+                    </div>
+                    <p class="text-sm text-navy/70 mb-6 leading-relaxed">Focuses on combinatorial math and discrete structures. Helping students reach AIME qualification.</p>
+                    <div class="pt-6 border-t border-navy/5 flex justify-between items-center">
+                        <span class="font-bold text-lg text-navy">$90<span class="text-xs font-normal text-navy/50">/hr</span></span>
+                        <a href="#waitlist" class="text-xs font-bold uppercase tracking-tighter border-b-2 border-gold pb-1 group-hover:border-navy transition-all">Reserve Spot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supply Section (Tutors) -->
+    <section id="teach" class="py-24 bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <img src="images/prestigious-university-fellowship-recrui.png" alt="SineUp Fellowship Recruitment" class="rounded-sm shadow-2xl">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="font-serif text-4xl font-bold mb-6">Earn $60-$80/hr <br>As a SineUp Fellow.</h2>
+                    <p class="text-white/80 text-lg mb-8 leading-relaxed">
+                        Don't waste your expertise on general tutoring platforms. Join a community of elite "Near-Peer" mentors. We handle the sales, billing, and matchmaking so you can focus on high-impact coaching.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start">
+                            <span class="text-gold mr-3">--</span>
+                            <span>Highest industry rates for university students.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-3">--</span>
+                            <span>Curated matches with highly motivated students.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-3">--</span>
+                            <span>Prestigious addition to your academic CV.</span>
+                        </li>
+                    </ul>
+                    <a href="#waitlist-tutor" class="inline-block bg-white text-navy px-10 py-4 font-bold uppercase tracking-widest hover:bg-gold hover:text-white transition-all">
+                        Apply for Fellowship
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist / Conversion -->
+    <section id="waitlist" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="font-serif text-4xl font-bold mb-4">Join the 2026 Batch</h2>
+            <p class="text-navy/60 mb-12">We are currently accepting waitlist applications for the Fall 2026 competition cycle. Space is limited to maintain 1:1 match quality.</p>
+            
+            <form onsubmit="event.preventDefault(); alert('Application received for 2026 batch. Our team will contact you within 48 hours.')" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Full Name" required class="w-full px-6 py-4 bg-graphGrey border-0 focus:ring-2 focus:ring-gold outline-none">
+                    <input type="email" placeholder="Email Address" required class="w-full px-6 py-4 bg-graphGrey border-0 focus:ring-2 focus:ring-gold outline-none">
+                </div>
+                <select class="w-full px-6 py-4 bg-graphGrey border-0 focus:ring-2 focus:ring-gold outline-none text-navy/50" id="role-select">
+                    <option value="parent">I am a Parent/Student (Demand)</option>
+                    <option value="tutor" id="waitlist-tutor">I am an Ivy League Student (Supply)</option>
+                </select>
+                <textarea placeholder="Tell us about your goals (e.g. AMC 12 prep, AP Calc help)" rows="4" class="w-full px-6 py-4 bg-graphGrey border-0 focus:ring-2 focus:ring-gold outline-none"></textarea>
+                <button type="submit" class="w-full bg-navy text-white py-5 font-bold uppercase tracking-[0.2em] hover:bg-gold transition-all">
+                    Submit Application
+                </button>
+            </form>
+            <p class="mt-6 text-[10px] uppercase tracking-widest text-navy/30 font-bold">Application processing fee: $99 (Charged only upon successful match)</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white/40 py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="font-serif text-xl font-bold text-white mb-6 md:mb-0">Sine<span class="text-gold">Up</span></div>
+                <div class="flex space-x-8 text-xs uppercase tracking-widest">
+                    <a href="#" class="hover:text-white">Privacy</a>
+                    <a href="#" class="hover:text-white">Terms</a>
+                    <a href="mailto:loadtest-3@loadtest.baget.ai" class="hover:text-white">Contact</a>
+                </div>
+                <div class="mt-6 md:mt-0 text-[10px]">
+                    &copy; 2026 SineUp Mentorship Group. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
